@@ -7,7 +7,9 @@
         }
     },
     "require": {
+        "psr/log": "*",
         "webmozart/assert": "*",
+        "basic-app/migration": "*",
         "basic-app/entity": "*",
         "basic-app/model": "*"
     }
