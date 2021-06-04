@@ -8,7 +8,7 @@
     },
     "require": {
         "webmozart/assert": "*",
-        "basic-app/active-model": "*",
-        "basic-app/entity": "*"
+        "basic-app/entity": "*",
+        "basic-app/model": "*"
     }
 }
