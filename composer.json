@@ -1,0 +1,14 @@
+{
+    "name": "basic-app/log",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BasicApp\\Log\\": ""
+        }
+    },
+    "require": {
+        "webmozart/assert": "*",
+        "basic-app/active-model": "*",
+        "basic-app/entity"
+    }
+}
