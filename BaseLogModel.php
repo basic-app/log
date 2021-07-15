@@ -20,12 +20,24 @@ abstract class BaseLogModel extends \BasicApp\Model\BaseModel implements LoggerI
 
     protected $allowedFields = ['level', 'message', 'context'];
 
+    protected $defaultContext;
+
+    public function setDefaultContext(array $context)
+    {
+        $this->defaultContext = $context;
+    }
+
     public function log($level, $message, array $context = [])
     {
         $params = [
             'level' => $level,
             'message' => $message
         ];
+
+        if ($this->defaultContext)
+        {
+            $context = array_merge($this->defaultContext, $context);
+        }
 
         foreach($context as $key => $value)
         {
